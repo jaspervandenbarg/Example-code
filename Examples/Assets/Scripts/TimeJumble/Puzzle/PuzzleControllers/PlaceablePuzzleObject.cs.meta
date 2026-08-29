@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 362dd47939bdd1a48a5119fcff2ae47f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - currentLocation: {fileID: 11400000, guid: 4f88457bb433e764794a5526c99362d5, type: 2}
+  - reloadUIEvent: {fileID: 11400000, guid: 1170d750a7d599c46b4514769bea6e12, type: 2}
+  - objectToPlace: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

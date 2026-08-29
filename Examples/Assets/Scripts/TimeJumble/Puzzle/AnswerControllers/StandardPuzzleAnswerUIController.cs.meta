@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f612e054a26d75f4999cbc3d523bc8bc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - currentPuzzle: {fileID: 11400000, guid: 4f88457bb433e764794a5526c99362d5, type: 2}
+  - puzzleCompletedEvent: {fileID: 11400000, guid: cb518ad230850954c92d32654ddf7235, type: 2}
+  - inputField: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

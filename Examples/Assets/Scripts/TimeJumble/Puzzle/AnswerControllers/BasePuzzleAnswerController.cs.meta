@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 8c24580f83d8afb49872535f08abd0c7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - currentLocation: {fileID: 11400000, guid: 4f88457bb433e764794a5526c99362d5, type: 2}
+  - localizedStringEvent: {fileID: 11400000, guid: 4bc9f340a7f53ac48bf3d03c6cfeb2b2, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

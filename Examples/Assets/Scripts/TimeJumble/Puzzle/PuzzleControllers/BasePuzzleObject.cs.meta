@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 37295cb5843d1a64b83cba8ed81a818e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - currentLocation: {fileID: 11400000, guid: 4f88457bb433e764794a5526c99362d5, type: 2}
+  - reloadUIEvent: {fileID: 11400000, guid: 1170d750a7d599c46b4514769bea6e12, type: 2}
+  - chatboxEvent: {fileID: 11400000, guid: 4bc9f340a7f53ac48bf3d03c6cfeb2b2, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

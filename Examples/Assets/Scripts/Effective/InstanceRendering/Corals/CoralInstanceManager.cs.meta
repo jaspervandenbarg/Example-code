@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5923b72863f5b784dbc6643ee192d765
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - material: {fileID: 2100000, guid: 0ae6847b3da20704e8d9a6509c677610, type: 2}
+  - sharedMesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  - playerCamera: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
