@@ -84,11 +84,14 @@ public class ImageTrackingObjectManager : MonoBehaviour
     NumberManager m_OneNumberManager;
     NumberManager m_TwoNumberManager;
 
+    // Review 31-08-2026: Should not use static fields for monobehaviour (don't assume one single ImageTrackingObjectManager per scene)
     static Guid s_FirstImageGUID;
     static Guid s_SecondImageGUID;
 
     void OnEnable()
     {
+        // Review 31-08-2026: Assumes library is valid, not safe!
+        // Review 31-08-2026: Check if library != null and >= 2
         s_FirstImageGUID = m_ImageLibrary[0].guid;
         s_SecondImageGUID = m_ImageLibrary[1].guid;
         
@@ -155,6 +158,7 @@ public class ImageTrackingObjectManager : MonoBehaviour
             {
                 Destroy(m_SpawnedOnePrefab);
             }
+            // Review 31-08-2026: should have checked against s_SecondImageGUID
             else if (image.referenceImage.guid == s_FirstImageGUID)
             {
                 Destroy(m_SpawnedTwoPrefab);
@@ -165,6 +169,7 @@ public class ImageTrackingObjectManager : MonoBehaviour
     public int NumberOfTrackedImages()
     {
         m_NumberOfTrackedImages = 0;
+        // Review 31-08-2026: Could have checked if (m_OneTracked && m_TwoTracked) instead of looping for a match
         foreach (ARTrackedImage image in m_ImageManager.trackables)
         {
             if (image.trackingState == TrackingState.Tracking)
