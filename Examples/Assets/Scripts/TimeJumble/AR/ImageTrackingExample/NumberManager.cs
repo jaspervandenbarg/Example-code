@@ -16,6 +16,7 @@ public class NumberManager : MonoBehaviour
 
     AimConstraint m_Constraint;
 
+    // Review 31-08-2026: Should manage the m_Constraint source better, now a new instances is instantiated each OnEnable.
     void OnEnable()
     {
         ConstraintSource m_Source = new ConstraintSource();
