@@ -32,10 +32,11 @@ namespace Jigsar.AR
 
         private bool placementPoseIsValid = false;
 
+
+        // Review 31-08-2026: These FindObjectOfType (also in awake) are better replaced with direct references in Scene or through Scriptable objects
+        // Review 31-08-2026: instead of assuming the object will be in scene and the correct object will be found.
         public bool UseOcclusion { set => FindObjectOfType<AROcclusionManager>().enabled = value; }
 
-
-        // Start is called before the first frame update
         void Awake()
         {
             arRaycastManager = FindObjectOfType<ARRaycastManager>();
@@ -44,10 +45,11 @@ namespace Jigsar.AR
 
         private void Start()
         {
+            // Review 31-08-2026: Better equip the "Trackables" objects with behaviour that adds/removes them from a scriptable object list
+            // Review 31-08-2026: that should be referenced here instead of finding them in the scene by string.
             trackables = GameObject.Find("Trackables");
         }
 
-        // Update is called once per frame
         void Update()
         {
             if (spawnedObject == null || (spawnedObject != null && !spawnedObject.activeSelf))
@@ -81,8 +83,11 @@ namespace Jigsar.AR
             }
         }
 
+        // Review 31-08-2026: should also check placementPoseIsValid. 
         public void ToggleARObject()
         {
+            // Review 31-08-2026: Today I would use an enum to make the state explicit and use a switch case instead of if else
+        
             //if spawned object is null instantiate object
             if (spawnedObject == null)
             {
