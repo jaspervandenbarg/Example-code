@@ -17,7 +17,8 @@ namespace Jigsar.AR
 
         [OdinSerialize] private XRReferenceImageLibrary imageLibrary;
 
-        // might change this to an custom object with string:name and gameobject:prefab
+        // Review 31-08-2026: did not get to this point in the past because this was safe for our small controlled environment but needs updating for larger projects.
+        // might change this to a custom object with string:name and gameobject:prefab
         [Tooltip("Be sure the names of the prefabs match with the names in the image library! Prefabs must each have a unique name")]
         [SerializeField] private GameObject[] objectsToPlace = new GameObject[0];
         [SerializeField] private float scale;
@@ -27,6 +28,7 @@ namespace Jigsar.AR
 
         public void InitializeImageTracking(XRReferenceImageLibrary library, GameObject[] objects)
         {
+            // Review 31-08-2026: could have build a dictionary once and looked for key instead of looping over list each update in UpdateTrackedImage
             imageLibrary = library;
 
             objectsToPlace = objects;
